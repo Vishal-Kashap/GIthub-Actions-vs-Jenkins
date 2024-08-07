@@ -4,11 +4,10 @@
 |-------------------------|--------------------------------------------------------|----------------------------------------------------------|
 | *Overview*            | CI/CD and automation service integrated with GitHub.  | Open-source automation server with extensive plugins.    |
 | *Setup and Configuration* | Integrated into GitHub, no separate installation required. Configuration via YAML files in .github/workflows. | Requires separate installation. Configuration via Jenkinsfiles (Groovy) or web interface. |
-| *Integration*         | Native integration with GitHub repositories; supports GitHub-specific events (e.g., push, pull request). | Supports various VCS through plugins; requires setup for GitHub integration. |
-| *Scalability*         | Automatically scales with GitHub’s infrastructure; supports GitHub-hosted or self-hosted runners. | Requires manual setup of additional agents (slaves) for scaling; infrastructure management needed. |
+| *Integration*         | Since it's part of GitHub, there's no need to install anything extra. We just write simple configuration files (in YAML format) and place them in a specific folder in your GitHub repository | We need to install Jenkins separately on a server. Once installed, you configure it using scripts (Jenkinsfiles) or through its web interface. |
 | *User Interface*      | Integrated within GitHub’s UI; provides visual insights into workflows, logs, and status. | Standalone web interface; extensive but can be complex to navigate. |
-| *Pipeline Configuration* | Defined using simple YAML files; supports matrix builds and concurrency controls. | Defined using Jenkinsfiles with Groovy scripting; supports advanced features through Pipeline DSL. |
-| *Community and Ecosystem* | Growing ecosystem with community-contributed actions in GitHub Marketplace; integrated with GitHub’s support. | Mature ecosystem with many plugins and extensive community support. |
+| *Pipeline Configuration* | We write simple YAML files to define what tasks should be run. It supports advanced setups like running multiple tasks at once or in specific orders. | We write scripts in a language called Groovy within Jenkinsfiles to define our tasks. It supports very complex and advanced configurations |
+| *Community and Ecosystem* | There's a growing collection of pre-built actions we can use, contributed by the community. It's tightly integrated with GitHub’s support. |It has been around for a long time and has a large collection of plugins and a strong community for support. |
 | *Cost*                | Free tier with usage limits; pricing based on usage beyond free tier. | Open-source and free; costs may arise from infrastructure and plugins. |
 
 ## Conclusion
